@@ -17,7 +17,7 @@ const App = () => {
       .then(robots => {
         setRobots(robots);
       });
-  });
+  }, []);
 
   const onSearchChange = event => {
     setSearch(event.target.value);
